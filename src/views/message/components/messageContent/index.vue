@@ -42,7 +42,7 @@ for (let i = 0; i < 10; i++) {
 <template>
 <div class="message-content">
   <div v-for="item in messageList" :key="item.messageId" :class="['message-item', item.isSelf && 'is-self']">
-    <div class="user-logo">
+    <div class="user-logo" v-if="!item.isSelf">
       <logo></logo>
     </div>
     <div :class="['message-self', item.isSelf ? 'self' : 'other']">
@@ -66,7 +66,6 @@ for (let i = 0; i < 10; i++) {
   }
 
   .self {
-    margin-right: 16px;
     margin-left: 120px;
     background: #027dfb;
     border-radius: 6px;
