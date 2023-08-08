@@ -14,7 +14,7 @@ const menus: Ref<Menu[]> = ref([
   {
     icon: '',
     name: '消息',
-    path: 'message'
+    path: 'conversation'
   },
   {
     icon: '',
@@ -27,6 +27,10 @@ const menus: Ref<Menu[]> = ref([
   {
     icon: '',
     name: '上传'
+  },
+  {
+    icon: '',
+    name: '计时器'
   }
 ]);
 

@@ -5,14 +5,18 @@ export default createRouter({
     {
       path: '/',
       component: () => import('./../App.vue'),
+      redirect: {
+        name: 'message'
+      },
       children: [
         {
-          path: '',
+          path: 'message',
+          name: 'message',
           component: () => import('./../views/index.vue'),
           children: [
             {
-              path: 'message',
-              name: 'message',
+              path: 'conversation',
+              name: 'conversation',
               component: () => import('./../views/message/index.vue')
             }
           ]
