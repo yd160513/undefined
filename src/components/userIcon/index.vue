@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const userIconPath = './../../assets/vue.svg'
+const userIconPath = '/public/ahao.jpg'
 </script>
 
 <template>

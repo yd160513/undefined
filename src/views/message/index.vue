@@ -13,8 +13,8 @@
         <conversation-list></conversation-list>
       </div>
     </div>
-    <div class="conversation-content">
-      会话内容
+    <div class="conversation-content-box">
+      <conversation-content></conversation-content>
     </div>
   </div>
 </template>
@@ -22,6 +22,7 @@
 import Search from './components/search/index.vue';
 import More from './components/more/index.vue';
 import ConversationList from './components/conversationList/index.vue'
+import ConversationContent from './components/conversationContent/index.vue';
 </script>
 <style lang="scss" scoped>
 .message-box {
@@ -33,8 +34,10 @@ import ConversationList from './components/conversationList/index.vue'
     overflow-y: scroll;
   }
 
-  .conversation-content {
+  .conversation-content-box {
     flex: 1;
+    height: 100%;
+    overflow-y: hidden;
   }
 
   .message-left {

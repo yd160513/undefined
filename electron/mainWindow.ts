@@ -10,6 +10,8 @@ export default function createWindow() {
     frame: false,
     width: 960,
     height: 640,
+    minWidth: 960,
+    minHeight: 640,
     x: 0,
     y: 0,
     webPreferences: {
