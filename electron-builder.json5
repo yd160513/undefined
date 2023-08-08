@@ -16,7 +16,8 @@
     "artifactName": "${productName}_${version}.${ext}",
     "target": [
       "dmg"
-    ]
+    ],
+    "icon": "./public/icons/undefined.png",
   },
   "win": {
     "target": [

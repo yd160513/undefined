@@ -6,7 +6,7 @@ const VITE_DEV_SERVER_URL = process.env['VITE_DEV_SERVER_URL']
 
 export default function createWindow() {
   const win = new BrowserWindow({
-    icon: path.join(process.env.PUBLIC, 'electron-vite.svg'),
+    icon: path.join(process.env.PUBLIC, 'undefined.png'),
     frame: false,
     width: 960,
     height: 640,
@@ -30,6 +30,8 @@ export default function createWindow() {
     // win.loadFile('dist/index.html')
     win.loadFile(path.join(process.env.DIST, 'index.html'))
   }
+
+  win.webContents.openDevTools()
 
   return win
 }

@@ -1,7 +1,9 @@
 {
-  "name": "undefined",
+  "name": "reach",
   "private": true,
   "version": "0.0.0",
+  "description": "已会技术的验证",
+  "author": "ahao",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build && electron-builder",
